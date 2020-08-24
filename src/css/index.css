@@ -1,0 +1,261 @@
+/****************** 通用样式 ***********************/
+body {
+  color: #000;
+}
+
+
+@font-face {
+  font-family: icomoon;
+  src: url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.svg') format('svg'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff')
+}
+
+/* 匹配 */
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: icomoon;
+  font-style: normal;
+}
+
+#xb_about,
+#xb_hot,
+#xb_link {
+  padding: 20px 0;
+}
+
+#xb_about .title,
+#xb_hot .title,
+#xb_link .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+/* ***************头部样式************************ */
+
+/* #xb_header {
+
+} */
+
+#xb_header .top-bar {
+  height: 40px;
+  line-height: 37px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#xb_header .top-bar .container .row>div+div {
+  border-left: 1px solid #e0e0e0;
+}
+
+#xb_header .top-bar .container .row .top-bar-1 a {
+  position: relative;
+}
+
+#xb_header .top-bar .container .row .top-bar-1 a img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -10px;
+  z-index: 9999;
+}
+
+#xb_header .top-bar .container .row .top-bar-1 a:hover img {
+  display: block;
+}
+
+.icon-phone:before {
+  content: "\e942";
+  font-size: 13px;
+}
+
+.icon-tel:before {
+  content: "\e958";
+  font-size: 13px;
+}
+
+#xb_header .navbar-xb {
+  background-color: #fff;
+  margin-bottom: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+#xb_header .navbar-xb .navbar-brand {
+  height: 70px;
+  padding: 0px;
+}
+
+#xb_header .navbar-xb .navbar-nav a {
+  height: 70px;
+  line-height: 40px;
+}
+
+#xb_header .navbar-xb .navbar-nav li.active a,
+#xb_header .navbar-xb .navbar-nav li a:hover {
+  background-color: transparent;
+  /* background-color: gray; */
+  border-bottom: 2px solid #337ab7
+}
+
+#xb_header .navbar-xb .navbar-toggle {
+  margin-top: 20px;
+}
+
+/* ***************头部样式************************ */
+
+/* ***************轮播图样式************************ */
+#xb_carousel {}
+
+#xb_carousel .item {
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (min-width:800px) {
+  #xb_carousel .item {
+    height: 410px;
+  }
+}
+
+/* ***************轮播图样式************************ */
+/* ***************关于我们样式************************ */
+#xb_about .row p {
+  line-height: 26px;
+  font-size: 15px;
+}
+
+#xb_product {
+  background-color: #f0f0f0;
+  padding: 30px 0;
+}
+
+#xb_product .nav {
+  font-size: 18px;
+}
+
+#xb_product .nav a {
+  color: #999;
+}
+
+#xb_product .nav li.active a {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #337ab7;
+  color: #000;
+}
+
+#pd_one_1 {
+  margin: 15px 0;
+}
+
+#pd_one_2 {
+  background-color: transparent;
+}
+
+#pd_one_4 {
+  margin: 15px 0;
+}
+
+#xb_product #pd_two_1 {
+  padding: 100px 0;
+}
+
+#xb_product #pd_two_1 h1 {
+  margin-bottom: 15px;
+}
+
+
+
+
+/* ***************关于我们样式************************ */
+
+/* ***************热门课程样式************************ */
+#xb_hot .lesson {
+  padding: 15px 10px;
+}
+
+#xb_hot .media-left {
+  width: 20%;
+}
+
+#xb_hot .media-body {
+  width: 60%;
+  vertical-align: middle;
+}
+
+#xb_hot .media-right {
+  width: 20%;
+  font-size: 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+/* ***************热门课程样式************************ */
+
+/* ***************友情链接样式************************ */
+#xb_link .logos {
+  list-style: none;
+  text-align: center;
+}
+
+#xb_link .logos li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* ***************友情链接样式************************ */
+
+/* ***************尾部样式************************ */
+#xb_footer {
+  width: 100%;
+  height: 170px;
+  background: gray;
+  color: #fff;
+  font-size: 16px;
+}
+
+#xb_footer ul {
+  list-style: none;
+}
+
+#xb_footer .one,
+#xb_footer .two {
+  padding: 10px;
+  border-right: 1px solid #666;
+  height: 130px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#xb_footer .one li {
+  line-height: 40px;
+}
+
+#xb_footer .one li a {
+  color: #fff;
+}
+
+#xb_footer .three{
+  padding: 10px 50px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#xb_footer .three a{
+  margin-right:15px;
+  text-decoration: none;
+}
+
+/* ***************尾部样式************************ */
