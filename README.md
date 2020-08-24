@@ -6,5 +6,5 @@ npm install
 
 node app
 
-[项目地址](http://localhost:3000)
-
+//启动后通过本地访问
+http://localhost:3000
